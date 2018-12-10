@@ -16,3 +16,21 @@ for items in prices:
   print items
   print "price: %s" % prices[items]
   print "stock: %s" % stock[items] 
+  
+  
+total = 0
+for key in prices:
+   print prices[key] * stock[key]
+   total = total + prices[key] * stock[key]
+print total    
+
+
+how much you’re paying for all of the items on your grocery list.
+
+  def compute_bill(food):
+  total = 0
+  for items in food:
+    if stock[items] > 0:
+      total += prices[items]
+      stock[items] -= 1
+  return total  
