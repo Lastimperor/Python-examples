@@ -1,0 +1,6 @@
+from random import randint
+
+def random_int(numero):
+    return randint(0, numero)
+
+print random_int(25) 
