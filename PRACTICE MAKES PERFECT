@@ -116,3 +116,22 @@ def count(sequence, item):
 
 print count(("casa", "casa", "casa", "cavallo"), "casa")
 
+#only even number in my list
+
+def purify(x):
+  z = []
+  for n in x:
+    if n % 2 == 0:
+      z.append(n)
+  return z  
+
+print purify([2,3,1,4])
+
+#product
+
+def product(lst):
+  result = 1
+  for x in lst:
+    result *= x
+  return result  
+
