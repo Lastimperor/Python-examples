@@ -135,3 +135,12 @@ def product(lst):
     result *= x
   return result  
 
+#remove duplicates
+
+def remove_duplicates(lst):
+  result = []
+  for x in lst:
+    if x not in result:
+      result.append(x)
+  return result  
+
